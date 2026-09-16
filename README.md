@@ -2,8 +2,11 @@
 
 AI systems, websites & growth infrastructure for businesses across 29 industries.
 
-Static single-page site (`index.html`, no build step) with two Vercel serverless
-functions in `api/` for GoHighLevel calendar booking. Cloned from the studio's SHAI
+Static single-page site (`index.html`) with two Vercel serverless functions in `api/`
+for GoHighLevel calendar booking. `build.js` (run by `npm run build`) assembles the
+deployable tree into `dist/` — it copies the repo's files and fetches any that are
+missing from this public repo, so the Vercel project's settings are Build Command
+`node build.js`, Output Directory `dist`. Live: https://site-ring-warden.vercel.app Cloned from the studio's SHAI
 template and rebranded (hot-pink/near-black palette, Outfit / DM Sans / Fira Code,
 custom logo, intro loader video, "warden ring" in the Three.js hero).
 

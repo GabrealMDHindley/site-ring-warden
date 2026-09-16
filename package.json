@@ -1,0 +1,7 @@
+{
+  "name": "site-ring-warden",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  }
+}
